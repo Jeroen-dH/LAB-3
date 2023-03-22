@@ -9,5 +9,20 @@ for (let index = 1; index <= aantalBoxen; index++) {
 document.write("</div>");
 
 function ChangeBGC(id){
-    document.getElementById(id).style.backgroundColor = "red";
+    switch (document.getElementById(id).style.backgroundColor){
+        case "green":
+            document.getElementById(id).style.backgroundColor = "red";
+            break
+        case "red":
+            document.getElementById(id).style.backgroundColor = "purple";
+            break
+        case "purple":
+            document.getElementById(id).style.backgroundColor = "blue";
+            break
+        case "blue":
+            document.getElementById(id).style.visibility = "hidden";
+            break
+    }
+    
+
 }
